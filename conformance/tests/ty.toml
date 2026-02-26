@@ -1,0 +1,8 @@
+[environment]
+python-version = "3.12"
+
+[rules]
+deprecated = "error"
+invalid-legacy-positional-parameter = "error"
+redundant-final-classvar = "error"
+assert-type-unspellable-subtype = "ignore"
