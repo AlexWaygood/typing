@@ -1,4 +1,8 @@
 conformance_automated = "Fail"
+conformant = "Partial"
+notes = """
+Supports `ParamSpec` but is missing several validation checks around correct usage.
+"""
 errors_diff = """
 Line 20: Expected 1 errors
 Line 26: Expected 1 errors

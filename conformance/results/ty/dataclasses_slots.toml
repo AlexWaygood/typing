@@ -1,4 +1,8 @@
 conformance_automated = "Fail"
+conformant = "Partial"
+notes = """
+Synthesizes a `__slots__` attribute but does not validate attribute assignments against `__slots__`.
+"""
 errors_diff = """
 Line 25: Expected 1 errors
 Line 38: Expected 1 errors

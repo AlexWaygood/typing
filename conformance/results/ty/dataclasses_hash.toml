@@ -1,4 +1,8 @@
 conformance_automated = "Fail"
+conformant = "Unsupported"
+notes = """
+Infers all objects as being hashable.
+"""
 errors_diff = """
 Line 15: Expected 1 errors
 Line 32: Expected 1 errors

@@ -1,4 +1,9 @@
 conformance_automated = "Fail"
+conformant = "Partial"
+notes = """
+Does not forbid `Final`-annotated assignments to attributes on `self` in non-`__init__` methods.
+Does not flag modifications of `Final`-annotated attributes via augmented assignment.
+"""
 errors_diff = """
 Line 62: Expected 1 errors
 Line 63: Expected 1 errors

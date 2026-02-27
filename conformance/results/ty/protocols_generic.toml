@@ -1,4 +1,8 @@
 conformance_automated = "Fail"
+conformant = "Partial"
+notes = """
+Only partially supports `@property` protocol members.
+"""
 errors_diff = """
 Line 145: Expected 1 errors
 Line 146: Expected 1 errors

@@ -1,4 +1,8 @@
 conformance_automated = "Fail"
+conformant = "Partial"
+notes = """
+Only supports the new syntax using `*`, not `typing.Unpack`.
+"""
 errors_diff = """
 Line 59: Expected 1 errors
 Lines 60, 61: Expected error (tag 't14')

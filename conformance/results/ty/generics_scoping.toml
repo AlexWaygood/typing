@@ -1,4 +1,10 @@
 conformance_automated = "Fail"
+conformant = "Partial"
+notes = """
+Does not reject unbound type variables appearing in the bodies of generic functions or classes.
+Does not reject a generic attribute in an inner class reusing a type variable scoped to an outer class.
+Does not reject unbound type variables used in global-scope annotations.
+"""
 errors_diff = """
 Line 61: Expected 1 errors
 Line 65: Expected 1 errors

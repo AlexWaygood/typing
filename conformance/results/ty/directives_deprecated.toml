@@ -1,4 +1,10 @@
 conformance_automated = "Fail"
+conformant = "Partial"
+notes = """
+Does not detect calls to deprecated overloads.
+Does not detect implicit calls to deprecated dunder methods, for example via operators.
+Does not detect accesses of, or attempts to set, deprecated properties.
+"""
 errors_diff = """
 Line 30: Expected 1 errors
 Line 41: Expected 1 errors

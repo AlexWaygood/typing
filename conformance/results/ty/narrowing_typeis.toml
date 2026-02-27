@@ -1,4 +1,8 @@
 conformance_automated = "Fail"
+conformant = "Partial"
+notes = """
+Intersects the pre-existing type with the top materialization of the bracketed type rather than the bracketed type itself.
+"""
 errors_diff = """
 Line 35: Unexpected errors ['narrowing_typeis.py:35:18: error[invalid-assignment] Object of type `object` is not assignable to `int`']
 """

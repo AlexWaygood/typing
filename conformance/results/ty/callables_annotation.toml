@@ -1,4 +1,11 @@
 conformance_automated = "Fail"
+conformant = "Partial"
+notes = """
+Does not reject `Callable[[...], int]` in a type expression.
+Does not support `Concatenate`.
+Infers a callback protocol as being a gradual type if the callback has signature `__call__[T](self, *args: T, **kwargs: T)` and `T` has been explicitly specialized to `Any`.
+Does not infer a callback protocol as being a gradual type  if the callback has signature `__call__(self, a: int, /, *args: Any, **kwargs: Any)`.
+"""
 errors_diff = """
 Line 59: Expected 1 errors
 Line 91: Expected 1 errors

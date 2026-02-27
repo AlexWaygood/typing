@@ -1,4 +1,8 @@
 conformance_automated = "Fail"
+conformant = "Partial"
+notes = """
+Does not validate overrides of `TypedDict` keys.
+"""
 errors_diff = """
 Line 50: Expected 1 errors
 Line 94: Expected 1 errors

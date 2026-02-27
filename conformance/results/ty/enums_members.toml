@@ -1,4 +1,8 @@
 conformance_automated = "Fail"
+conformant = "Partial"
+notes = """
+Does not reject explicitly annotated enum members.
+"""
 errors_diff = """
 Line 50: Expected 1 errors
 """

@@ -1,4 +1,5 @@
 conformance_automated = "Fail"
+conformant = "Unsupported"
 errors_diff = """
 Line 49: Unexpected errors ['constructors_call_new.py:49:1: error[type-assertion-failure] Type `Class3` does not match asserted type `int`', 'constructors_call_new.py:49:13: error[missing-argument] No argument provided for required parameter `x` of bound method `__init__`']
 Line 64: Unexpected errors ['constructors_call_new.py:64:1: error[type-assertion-failure] Type `Class4` does not match asserted type `Class4 | Any`', 'constructors_call_new.py:64:13: error[missing-argument] No argument provided for required parameter `x` of bound method `__init__`']

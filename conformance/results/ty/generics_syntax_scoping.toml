@@ -1,4 +1,8 @@
 conformance_automated = "Fail"
+conformant = "Partial"
+notes = """
+Does not reject type variables bound in outer scopes from being rebound in inner scopes.
+"""
 errors_diff = """
 Line 92: Expected 1 errors
 Line 95: Expected 1 errors

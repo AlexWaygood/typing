@@ -1,4 +1,5 @@
 conformance_automated = "Fail"
+conformant = "Unsupported"
 errors_diff = """
 Line 52: Unexpected errors ['generics_typevartuple_concat.py:52:1: error[type-assertion-failure] Type `tuple[@Todo(TypeVarTuple), ...]` does not match asserted type `tuple[int, bool, str]`']
 """

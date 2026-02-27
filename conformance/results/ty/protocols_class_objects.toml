@@ -1,4 +1,11 @@
 conformance_automated = "Fail"
+conformant = "Unsupported"
+notes = """
+`type[Proto]` is not yet supported.
+`ClassVar` protocol members are not yet supported.
+`@property` protocol members are only partially supported.
+A class object `C` is only considered to inhabit a protocol type with a method member `f` if `f` exists as an attribute on the metaclass of `C`.
+"""
 errors_diff = """
 Line 29: Expected 1 errors
 Line 34: Expected 1 errors

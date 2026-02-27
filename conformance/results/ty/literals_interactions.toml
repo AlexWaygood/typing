@@ -1,4 +1,8 @@
 conformance_automated = "Fail"
+conformant = "Partial"
+notes = """
+Deliberately does not allow `str` to be narrowed to literal string types through equality or containment checks due to the possibility of `str` subclasses that could have unexpected equality semantics.
+"""
 errors_diff = """
 Line 106: Unexpected errors ['literals_interactions.py:106:35: error[invalid-argument-type] Argument to function `expects_bad_status` is incorrect: Expected `Literal["MALFORMED", "ABORTED"]`, found `str`']
 Line 109: Unexpected errors ['literals_interactions.py:109:32: error[invalid-argument-type] Argument to function `expects_pending_status` is incorrect: Expected `Literal["PENDING"]`, found `str`']

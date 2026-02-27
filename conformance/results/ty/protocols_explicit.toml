@@ -1,4 +1,9 @@
 conformance_automated = "Fail"
+conformant = "Unsupported"
+notes = """
+Allows implicitly abstract protocol methods to be called via `super()` on a protocol subclass.
+Allows instantiation of abstract subclasses of protocol classes.
+"""
 errors_diff = """
 Line 27: Expected 1 errors
 Line 60: Expected 1 errors

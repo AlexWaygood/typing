@@ -1,4 +1,8 @@
 conformance_automated = "Fail"
+conformant = "Partial"
+notes = """
+Does not reject assigning a callable with a single variadic positional parameter to a variable declared with a `Callable` type that accepts certain specific keyword arguments.
+"""
 errors_diff = """
 Line 125: Expected 1 errors
 """

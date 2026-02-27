@@ -1,4 +1,10 @@
 conformance_automated = "Fail"
+conformant = "Partial"
+notes = """
+Does not forbid a `TypeVar` immediately following a `TypeVarTuple` in a parameter list from having a default.
+Infers a more precise type than `type[]` for class objects.
+Incorrectly rejects list literals in specializations if a class is generic over a `TypeVarTuple` and a `ParamSpec`.
+"""
 errors_diff = """
 Line 143: Expected 1 errors
 Line 45: Unexpected errors ["generics_defaults.py:45:1: error[type-assertion-failure] Type `<class 'AllTheDefaults'>` does not match asserted type `type[AllTheDefaults[Any, Any, str, int, bool]]`"]

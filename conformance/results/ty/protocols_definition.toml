@@ -1,4 +1,11 @@
 conformance_automated = "Fail"
+conformant = "Partial"
+notes = """
+Does not reject implicit instance attributes in `Protocol` methods.
+Does not support `ClassVar` protocol members.
+Incorrectly considers `ClassVar` attributes on concrete classes as satisfying non-`ClassVar` attribute members on protocols.
+Only has partial support for `@property` protocol members.
+"""
 errors_diff = """
 Line 67: Expected 1 errors
 Line 117: Expected 1 errors

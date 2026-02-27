@@ -1,4 +1,14 @@
 conformance_automated = "Fail"
+conformant = "Unsupported"
+notes = """
+Supports `ParamSpec` but is missing many validation checks.
+
+Does not support `Concatenate`.
+Does not reject using a bare `ParamSpec` as a type alias value.
+Incorrectly allows type variables to be specialized with `ParamSpec`s.
+Allows bare variables to be annotated with `ParamSpec`.
+Allows `ParamSpec` to be used in the return type of a `Callable` annotation.
+"""
 errors_diff = """
 Line 15: Expected 1 errors
 Line 23: Expected 1 errors

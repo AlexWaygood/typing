@@ -1,4 +1,8 @@
 conformance_automated = "Fail"
+conformant = "Partial"
+notes = """
+Does not detect non-frozen `dataclass_transform` dataclasses invalidly inheriting from frozen ones.
+"""
 errors_diff = """
 Line 51: Expected 1 errors
 """

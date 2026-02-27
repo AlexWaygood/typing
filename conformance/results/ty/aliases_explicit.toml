@@ -1,4 +1,6 @@
 conformance_automated = "Fail"
+conformant = "Partial"
+notes = "`Concatenate` in type aliases is currently unsupported"
 errors_diff = """
 Line 87: Expected 1 errors
 Line 100: Expected 1 errors

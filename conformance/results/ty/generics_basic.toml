@@ -1,4 +1,9 @@
 conformance_automated = "Fail"
+conformant = "Partial"
+notes = """
+Incorrectly allows constrained type variables to be solved to a union of their constraints.
+Permits generic metaclasses.
+"""
 errors_diff = """
 Line 40: Expected 1 errors
 Line 41: Expected 1 errors

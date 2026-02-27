@@ -1,4 +1,12 @@
 conformance_automated = "Fail"
+conformant = "Partial"
+notes = """
+Does not reject use of the `type` statement inside functions.
+Does not reject attempts to use legacy type variables in new-tyle type aliases.
+Does not reject circular definitions of type aliases.
+Does not reject redeclarations of type aliases.
+Does not support `type` statements generic over `TypeVarTuple`s.
+"""
 errors_diff = """
 Line 56: Expected 1 errors
 Line 62: Expected 1 errors

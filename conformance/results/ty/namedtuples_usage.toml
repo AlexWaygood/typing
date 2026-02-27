@@ -1,4 +1,8 @@
 conformance_automated = "Fail"
+conformant = "Partial"
+notes = """
+Does not detect runtime errors from attempting to delete namedtuple attributes.
+"""
 errors_diff = """
 Line 42: Expected 1 errors
 """

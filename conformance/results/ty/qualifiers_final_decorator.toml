@@ -1,4 +1,8 @@
 conformance_automated = "Fail"
+conformant = "Partial"
+notes = """
+Does not reject using `@final` on a non-method function.
+"""
 errors_diff = """
 Lines 125, 126: Expected error (tag 'func')
 """

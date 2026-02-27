@@ -1,4 +1,10 @@
 conformance_automated = "Fail"
+conformant = "Partial"
+notes = """
+Allows arbitrary attributes to be accessed on `TA` where `TA = typing.Type[typing.Any]` or `TA = type[typing.Any]`.
+Treats `type` equivalently to `type[object]` rather than `type[typing.Any]`.
+Incorrectly infers `b.__mro__` as having type `typing.Any` rather than `tuple[type, ...]` if `b` has type `type[typing.Any]` or `typing.Type[typing.Any]`.
+"""
 errors_diff = """
 Line 144: Expected 1 errors
 Line 146: Expected 1 errors

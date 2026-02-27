@@ -1,4 +1,8 @@
 conformance_automated = "Fail"
+conformant = "Partial"
+notes = """
+Attempts to detect basic errors even in blocks it determines to be unreachable.
+"""
 errors_diff = """
 Line 14: Unexpected errors ['directives_version_platform.py:14:17: error[invalid-assignment] Object of type `Literal[""]` is not assignable to `int`']
 Line 22: Unexpected errors ['directives_version_platform.py:22:17: error[invalid-assignment] Object of type `Literal[""]` is not assignable to `int`']

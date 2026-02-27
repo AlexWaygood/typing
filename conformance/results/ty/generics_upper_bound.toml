@@ -1,4 +1,8 @@
 conformance_automated = "Fail"
+conformant = "Pass"
+notes = """
+Infers list[set | Unknown]` for `[1, 2]` and `set[Unknown | int]` for `{1, 2}`, leading to type-assertion failures for spurious reasons despite the type variables being accurately solved.
+"""
 errors_diff = """
 Line 37: Unexpected errors ['generics_upper_bound.py:37:1: error[type-assertion-failure] Type `list[Unknown | int]` does not match asserted type `list[int]`']
 Line 38: Unexpected errors ['generics_upper_bound.py:38:1: error[type-assertion-failure] Type `set[Unknown | int]` does not match asserted type `set[int]`']

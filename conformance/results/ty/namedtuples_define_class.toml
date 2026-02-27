@@ -1,4 +1,8 @@
 conformance_automated = "Fail"
+conformant = "Partial"
+notes = """
+Permits subclasses of `NamedTuple` classes to override read-only attributes in the class body of the subclass.
+"""
 errors_diff = """
 Line 106: Expected 1 errors
 """
